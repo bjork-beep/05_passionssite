@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+
+/******* Fonte og farver ********
+
+    font-family: "Oi", serif;
+    font-family: "Coiny", system-ui;
+    font-family: "Montserrat", serif;
+
+
+  *************** Menu ****************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #5c8c32;
+}
+
+.logo img {
+  width: 120px;
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #f9f1d5;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Coiny", system-ui;
+  font-size: 1.2rem;
+}
+
+.menu a:hover {
+  color: #aaba6e;
+}
+
+@media (max-width: 400px) {
+  header {
+    display: none;
+  }
+}
+
+/************* Menu slut *************/
+
+/********* Footer ************/
+footer {
+  background-color: #5c8c32;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  font-family: "Coiny", system-ui;
+  color: #f9f1d5;
+}
+
+/******** BASICS **********/
+body {
+  background-image: url(baggrund.svg);
+}
+
+main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+h1 {
+  font-family: "Oi", serif;
+  color: #f28f0e;
+  font-weight: 50;
+  font-size: 10cqw;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+h2,
+h3 {
+  font-family: "Coiny", system-ui;
+  color: #244805;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  color: #244805;
+  max-width: 50ch;
+  margin-bottom: 1rem;
+}
+
+/* Mobilversion */
+
+.herosection {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  aspect-ratio: 1200/500;
+  background-image: url(Astrid_svampe/heroastrid.webp);
+  background-size: cover;
+  object-fit: cover;
+}
+
+.section2 {
+  margin-top: 2rem;
+}
+
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.billede1 {
+  height: 200px;
+  background-image: url(Astrid_svampe/mobhøj.webp);
+  background-size: cover;
+  object-fit: cover;
+}
+.billede2 {
+  height: 200px;
+  background-image: url(Astrid_svampe/mobclose.webp);
+  background-size: cover;
+  object-fit: cover;
+}
+.billede3 {
+  height: 200px;
+  background-image: url(Astrid_svampe/mobcloseup2.webp);
+  background-size: cover;
+  object-fit: cover;
+}
+.billede4 {
+  height: 200px;
+  background-image: url(Astrid_svampe/mobøster.webp);
+  background-size: cover;
+  object-fit: cover;
+}
+
+.section3 {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+/******** Mobilversion slut ********/
+
+@media (min-width: 600px) {
+  .section1 {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  h1 {
+    font-weight: 50;
+    font-size: 6cqw;
+    line-height: 1;
+  }
+
+  .section2 {
+    padding-top: 4rem;
+  }
+
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+  }
+  .billede1 {
+    height: 615px;
+    background-image: url(Astrid_svampe/fullbody.webp);
+    background-size: cover;
+    object-fit: cover;
+    grid-row: span 2;
+  }
+  .billede2 {
+    height: 300px;
+    background-image: url(Astrid_svampe/closeup.webp);
+    background-size: cover;
+    object-fit: cover;
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .billede3 {
+    height: 300px;
+    background-image: url(Astrid_svampe/closeup2.webp);
+    background-size: cover;
+    object-fit: cover;
+    grid-column: 2/3;
+    grid-row: span 2;
+  }
+  .billede4 {
+    height: 300px;
+    background-image: url(Astrid_svampe/østershatte.webp);
+    background-size: cover;
+    object-fit: cover;
+    grid-column: 3/4;
+    grid-row: span 2;
+  }
+
+  .videogrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
